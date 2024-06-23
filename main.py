@@ -21,7 +21,6 @@ branco = (225,225,225)
 preto = (0,0,0)
 
 
-
 def salvarMarcacoes():
      with open("Estralas Marcadas.txt", "w") as arquivo:
           for nome, posicao in estrelas.items():
@@ -39,7 +38,7 @@ def carregarMarcacoes():
                     except ValueError:
                          continue
      except FileNotFoundError:
-          messagebox.showinfo("Erro", "Arquivo não encontrado.")     
+          messagebox.showinfo("Erro", "Arquivo não encontrado.")          
 
 
 def excluirMarcacoes():
@@ -77,6 +76,12 @@ while True:
         fonte = pygame.font.Font(None, 20)
         texto = fonte.render(item, True, (255, 255, 255))
         tela.blit(texto, (posicoes[0] + 10, posicoes[1] + 10))
+
+#EMANOEL
+
+
+
+
 
      textoOpcoes = fonte.render("Opções:", True, branco)
      textoSalvar = fonte.render("F10 - Salvar marcações", True, branco)
