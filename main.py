@@ -1,4 +1,4 @@
-#NOME DOS PARTICIPANTES --> LUIS THAYLOR/EMANOEL ROSA
+#NOME DOS PARTICIPANTES --> LUIS THAYLOR 1136726, EMANOEL ROSA 1136489
 
 import pygame
 from tkinter import simpledialog, messagebox
