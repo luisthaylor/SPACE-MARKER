@@ -116,3 +116,6 @@ while True:
      clock.tick(60)
 
 pygame.quit()
+
+#erro identificado
+
