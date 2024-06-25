@@ -77,7 +77,19 @@ while True:
         texto = fonte.render(item, True, (255, 255, 255))
         tela.blit(texto, (posicoes[0] + 10, posicoes[1] + 10))
 
-#EMANOEL
+     listaDeEstrelas = list(estrelas.values())
+     for i in range(len (listaDeEstrelas) - 1):
+          estrelaAtual = listaDeEstrelas[i]
+          proximaEstrela = listaDeEstrelas [i + 1]
+          if i < len(listaDeEstrelas) - 2:
+               pygame.draw.line(tela, branco, estrelaAtual, proximaEstrela)
+
+     if len(estrelas) >= 2:
+          primeiraEstrela = list(estrelas.values())[0]
+          segundaEstrela = list(estrelas.values())[1]
+          distancia = calcularDistancia(primeiraEstrela, segundaEstrela)
+          textoDistancia = fonte.render(f"Distância: {distancia:.2f}", True, branco)
+          tela.blit(textoDistancia, (10,130))
 
 
 
